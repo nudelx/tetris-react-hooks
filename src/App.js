@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
+import Tetris from "./components/Tetris"
+import GameBoard from "./components/GameBoard";
+import Popup from "./components/Popup"
+import Stage from './components/Stage'
+import Score from "./components/Score"
+import useGameBoard from './hooks/useGameBoard'
 
 function App() {
+  const {layoutReady} = useGameBoard()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GameBoard>
+      {layoutReady ? null : <Popup txt="loading..." className="loading"/>}
+      <Tetris>
+        <Stage/>
+        <Score/>
+      </Tetris>) 
+    </GameBoard>
+      
   );
 }
 
