@@ -1,5 +1,4 @@
 import React from 'react'
-// import Button from "./button"
 
 
 export default ({ txt , onYes, onNo , onCancel, ok, nok, can, className}) => {
