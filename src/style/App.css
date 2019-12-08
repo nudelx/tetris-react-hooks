@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -31,7 +32,7 @@ html, body {
   border: 1px solid red;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/dark-honeycomb.png");
+  background-image: url('../img/dark-honeycomb.png');
 }
 
 .popup {
@@ -53,7 +54,6 @@ html, body {
   position: relative;
   box-shadow: 3px 6px 17px 2px #2c3e50;
   background-color: #282c34;
-
 }
 
 .display > .fog {
@@ -65,7 +65,6 @@ html, body {
   background: #000;
   opacity: 0.4;
   z-index: 2;
-  
 }
 
 .display > .text {
@@ -73,8 +72,8 @@ html, body {
   position: relative;
   z-index: 3;
   margin: 10px auto;
-  min-height:100px;
-  padding: 10px ;
+  min-height: 100px;
+  padding: 10px;
 }
 
 .display > .buttonHolder {
@@ -84,12 +83,12 @@ html, body {
   padding: 10px;
 }
 
-.button  {
+.button {
   border: 1px solid #2980b9;
   display: inline-block;
   padding: 2px 10px;
   border-radius: 5px;
-  background-color: #3498db; 
+  background-color: #3498db;
   font-size: 18px;
   cursor: pointer;
   outline: none;
@@ -105,7 +104,7 @@ html, body {
 }
 
 .tetris {
-  border: 2PX solid green;
+  border: 2px solid green;
   margin: 30px auto;
   width: 90%;
   min-width: 900px;
@@ -119,10 +118,11 @@ html, body {
   border: 1px solid red;
   min-width: 600px;
   display: inline-block;
-  width: 50%;
+  width: 500px;
   height: 90%;
   vertical-align: top;
-  
+  position: relative;
+  white-space: normal;
 }
 
 .score {
@@ -135,40 +135,40 @@ html, body {
 }
 
 .cell {
-  width: 20px;
-  height: 20px;  
+  width: 11px;
+  height: 11px;
 }
 
 .c-orange {
   background-color: #e67e22;
-  border-top: 5px solid rgba(212,114,30,1);
-  border-right: 5px solid rgba(212,114,30,1);
-  border-bottom: 5px solid rgba(212,114,30,0.4);
-  border-left: 5px solid rgba(212,114,30,0.4);
+  border-top: 5px solid rgba(212, 114, 30, 1);
+  border-right: 5px solid rgba(212, 114, 30, 1);
+  border-bottom: 5px solid rgba(212, 114, 30, 0.4);
+  border-left: 5px solid rgba(212, 114, 30, 0.4);
 }
 
 .c-blue {
-  background-color: rgba(52, 152, 219,1.0);
-  border-top: 5px solid rgba(41, 128, 185,1.0);
-  border-right: 5px solid rgba(41, 128, 185,1.0);
-  border-bottom: 5px solid rgba(41, 128, 185,0.4);
-  border-left: 5px solid rgba(41, 128, 185,0.4);
+  background-color: rgba(52, 152, 219, 1);
+  border-top: 5px solid rgba(41, 128, 185, 1);
+  border-right: 5px solid rgba(41, 128, 185, 1);
+  border-bottom: 5px solid rgba(41, 128, 185, 0.4);
+  border-left: 5px solid rgba(41, 128, 185, 0.4);
 }
 
 .c-red {
-  background-color: rgba(231, 76, 60,1.0);
-  border-top: 5px solid rgba(192, 57, 43,1.0);
-  border-right: 5px solid rgba(192, 57, 43,1.0);
-  border-bottom: 5px solid rgba(192, 57, 43,0.4);
-  border-left: 5px solid rgba(192, 57, 43,0.4);
+  background-color: rgba(231, 76, 60, 1);
+  border-top: 5px solid rgba(192, 57, 43, 1);
+  border-right: 5px solid rgba(192, 57, 43, 1);
+  border-bottom: 5px solid rgba(192, 57, 43, 0.4);
+  border-left: 5px solid rgba(192, 57, 43, 0.4);
 }
 
 .c-green {
-  background-color: rgba(46, 204, 113,1.0);
-  border-top: 5px solid rgba(39, 174, 96,1.0);
-  border-right: 5px solid rgba(39, 174, 96,1.0);
-  border-bottom: 5px solid rgba(39, 174, 96,0.4);
-  border-left: 5px solid rgba(39, 174, 96,0.4);
+  background-color: rgba(46, 204, 113, 1);
+  border-top: 5px solid rgba(39, 174, 96, 1);
+  border-right: 5px solid rgba(39, 174, 96, 1);
+  border-bottom: 5px solid rgba(39, 174, 96, 0.4);
+  border-left: 5px solid rgba(39, 174, 96, 0.4);
 }
 
 .loading {
@@ -177,4 +177,10 @@ html, body {
   font-weight: 700;
   font-size: 20px;
   line-height: 100px;
+}
+
+.grid {
+  border: 1px solid rgba(204, 204, 204, 0.1);
+  display: inline-block;
+  vertical-align: top;
 }
