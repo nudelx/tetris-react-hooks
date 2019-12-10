@@ -13,7 +13,7 @@ export default () => {
           style={{ width: step - 1, height: step - 1 }}
         ></div>
       ))}
-      <Shape />
+      <Shape x={0} y={0} />
     </div>
   )
 }

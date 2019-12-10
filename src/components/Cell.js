@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default ({ children, color }) => <div className="cell c-green"></div>
+export default ({ children, color, className }) => (
+  <div className={`cell c-green ${className}`}></div>
+)

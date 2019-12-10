@@ -10,10 +10,13 @@ T-Block
 Z-Block
 */
 
-export default () => {
+export default ({ x, y }) => {
   return (
-    <div className="shape">
-      <Cell />
+    <div className="shape" style={{ top: x, left: y }}>
+      <Cell className="block-cell" />
+      <Cell className="block-cell" />
+      <Cell className="block-cell" />
+      <Cell className="block-cell" />
     </div>
   )
 }

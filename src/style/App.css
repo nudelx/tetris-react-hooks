@@ -190,3 +190,11 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+
+.shape {
+  position: absolute;
+}
+.block-cell {
+  position: relative;
+  display: block;
+}
