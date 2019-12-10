@@ -10,9 +10,10 @@ T-Block
 Z-Block
 */
 
-
 export default () => {
-  return (<div className="shape">
-      <Cell/>
-  </div>)
+  return (
+    <div className="shape">
+      <Cell />
+    </div>
+  )
 }

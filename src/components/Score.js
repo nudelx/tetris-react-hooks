@@ -1,5 +1,3 @@
 import React from 'react'
 
-
-export default ({ children }) => <div className="score">
-  </div>
+export default ({ children }) => <div className="score"></div>
